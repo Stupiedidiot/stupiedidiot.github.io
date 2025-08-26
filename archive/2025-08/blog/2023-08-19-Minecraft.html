@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./meta/main.css"><title>Minecraft irl!?!?!? | Da Blog</title></head>
+<body>
+    <div id="container"><div id="nav">
+    <div>
+        <nav>
+            <a href="./index">🏠︎</a>
+            <a href="./../about/index.html#from-blog">about me</a>
+            <a href="./archive">archive</a>
+            <a href="#micro">micro</a>
+            <a href="#" onclick="randomPost()">random</a>
+            <a href="./../index.html">✮ head back »</a>
+            <div id="nextprev-dup"></div>
+        </nav>
+    </div>
+</div>
+
+<script>
+function randomPost(){
+    fetch("/blog/meta/posts.json")
+        .then((response) => response.json())
+        .then((posts) => {
+            randomNum = Math.floor(Math.random() * posts.length);
+            window.location.href = posts[randomNum]
+    })
+}
+</script><header class="main">
+    <div>
+		<a href="#">🢂</a>
+		Da Blog!!
+	</div>
+</header><main class="page-content" aria-label="Content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="main-content post-header"><div id="blog-title">
+    <h1 itemprop="name headline">Minecraft irl!?!?!?</h1>
+</div><div id="blog-date">
+    <p class="post-meta">
+        <time class="dt-published" datetime="2023-08-19T00:00:00+08:00" itemprop="datePublished">Aug 19, 2023
+        </time></p>
+</div></header>
+
+  <div class="main-content post-content e-content" itemprop="articleBody">
+    <div class=justified-gallery>
+    <img src="./img/steve-1.jpg" style="--width: 900; --height: 674;"/>
+    <img src="./img/steve-2.jpg" style="--width: 900; --height: 674;"/>
+    <img src="./img/steve-3.jpg" style="--width: 900; --height: 675;"/>
+    <img src="./img/steve-4.jpg" style="--width: 900; --height: 676;"/>
+</div>
+<p>OMG YOU GUYS, YOU WILL NOT BELIEVE WHAT I FOUND TODAY!!!</p>
+
+<img src="img/steve-5.jpg"/>
+<p>I gave him some snacks and water</p>
+
+<div class=justified-gallery>
+    <img src="./img/steve-6.jpg" style="--width: 900; --height: 1200;"/>
+    <img src="./img/steve-7.jpg" style="--width: 900; --height: 675;"/>
+</div>
+<p>Aww~~~ he wanted to help me with my jigsaw puzzle :'3<br>I was worried that he would have trouble adjusting but he got along with my siblings quite well!</p>
+
+<img src="img/steve-8.jpg"/>
+<p class=txt-center style=margin-top:1rem;><i>He killed the ender dragon, but at what cost?</i></p>
+
+<img src="img/steve-9.jpg"/>
+<img src="img/steve-10.jpg"/>
+<p>He's holding a fard</p>
+
+<img src="img/steve-11.jpg"/>
+<a href=https://www.pixelpapercraft.com/papercraft/5407e809a6a2642f57000014/the-ultimate-bendable-steve class=txt-right><p>Pattern by RooterBuster</p></a>
+  </div>
+
+  <div class="main-content"><div id="nextprev">
+    
+        <a href="./2023-08-20-Meet-the-Fellas.html" id='nextprev-next'>Next</a>
+    
+    
+    <a href="./archive" id='nextprev-archive'>Archive</a>
+</div><div id="c_widget"></div>
+    <script>
+        var script = document.createElement('script');
+        script.src = "/meta/comment-widget.js";
+        document.head.appendChild(script);
+    </script>
+  </div>
+  <a class="u-url" href="./2023-08-19-Minecraft.html" hidden></a>
+
+</article>
+      </main><footer>
+    <div>
+        <a href="/about/index.html">about</a>
+        <a href="/map.html">map</a>
+        <a href="./feed.xml">rss</a>
+    </div>
+</footer>
+</div>
+    <script src="./meta/main.js"></script>
+  </body>
+</html>

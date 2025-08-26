@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./meta/main.css"><title>Banana Overlord | Da Blog</title></head>
+<body>
+    <div id="container"><div id="nav">
+    <div>
+        <nav>
+            <a href="./index">🏠︎</a>
+            <a href="./../about/index.html#from-blog">about me</a>
+            <a href="./archive">archive</a>
+            <a href="#micro">micro</a>
+            <a href="#" onclick="randomPost()">random</a>
+            <a href="./../index.html">✮ head back »</a>
+            <div id="nextprev-dup"></div>
+        </nav>
+    </div>
+</div>
+
+<script>
+function randomPost(){
+    fetch("/blog/meta/posts.json")
+        .then((response) => response.json())
+        .then((posts) => {
+            randomNum = Math.floor(Math.random() * posts.length);
+            window.location.href = posts[randomNum]
+    })
+}
+</script><header class="main">
+    <div>
+		<a href="#">🢂</a>
+		Da Blog!!
+	</div>
+</header><main class="page-content" aria-label="Content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="main-content post-header"><div id="blog-title">
+    <h1 itemprop="name headline">Banana Overlord</h1>
+</div><div id="blog-date">
+    <p class="post-meta">
+        <time class="dt-published" datetime="2024-06-15T00:00:00+08:00" itemprop="datePublished">Jun 15, 2024
+        </time></p>
+</div></header>
+
+  <div class="main-content post-content e-content" itemprop="articleBody">
+    <img src="./img/banana.jpg"/>
+<p>Another comic me and my friend took turns writing for.</p>
+  </div>
+
+  <div class="main-content"><div id="nextprev">
+    
+        <a href="./2025-01-01-Movie-Reviews.html" id='nextprev-next'>Next</a>
+    
+    
+        <a href="./2023-08-29-Pakka-Pets.html" id='nextprev-prev'>Prev</a>
+    
+    <a href="./archive" id='nextprev-archive'>Archive</a>
+</div><div id="c_widget"></div>
+    <script>
+        var script = document.createElement('script');
+        script.src = "/meta/comment-widget.js";
+        document.head.appendChild(script);
+    </script>
+  </div>
+  <a class="u-url" href="./2024-06-15-Banana-Overlord.html" hidden></a>
+
+</article>
+      </main><footer>
+    <div>
+        <a href="/about/index.html">about</a>
+        <a href="/map.html">map</a>
+        <a href="./feed.xml">rss</a>
+    </div>
+</footer>
+</div>
+    <script src="./meta/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./meta/main.css"><title>Pakka Pets | Da Blog</title></head>
+<body>
+    <div id="container"><div id="nav">
+    <div>
+        <nav>
+            <a href="./index">🏠︎</a>
+            <a href="./../about/index.html#from-blog">about me</a>
+            <a href="./archive">archive</a>
+            <a href="#micro">micro</a>
+            <a href="#" onclick="randomPost()">random</a>
+            <a href="./../index.html">✮ head back »</a>
+            <div id="nextprev-dup"></div>
+        </nav>
+    </div>
+</div>
+
+<script>
+function randomPost(){
+    fetch("/blog/meta/posts.json")
+        .then((response) => response.json())
+        .then((posts) => {
+            randomNum = Math.floor(Math.random() * posts.length);
+            window.location.href = posts[randomNum]
+    })
+}
+</script><header class="main">
+    <div>
+		<a href="#">🢂</a>
+		Da Blog!!
+	</div>
+</header><main class="page-content" aria-label="Content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="main-content post-header"><div id="blog-title">
+    <h1 itemprop="name headline">Pakka Pets</h1>
+</div><div id="blog-date">
+    <p class="post-meta">
+        <time class="dt-published" datetime="2023-08-29T00:00:00+08:00" itemprop="datePublished">Aug 29, 2023
+        </time></p>
+</div></header>
+
+  <div class="main-content post-content e-content" itemprop="articleBody">
+    <p>Today I remembered Pakka Pets exsisted.</span> I made so much progress I made before my phone died. To lazy to download it again but I do have images from before.</p>
+
+<div class="justified-gallery">
+    <img src="./img/pakkapets-2.jpg" style="--width: 900; --height: 893;"/>
+    <img src="./img/pakkapets-3.jpg" style="--width: 900; --height: 896;"/>
+    <img src="./img/pakkapets-4.jpg" style="--width: 900; --height: 827;"/>              
+</div>
+<p>She was my favorite one. What a silly guy.</p>
+
+<img src="./img/pakkapets-5.jpg"/>
+<p>Kids playing in a park (gone wrong)</p>
+
+<div class="justified-gallery">
+    <img src="./img/pakkapets-6.jpg" style="--width: 900; --height: 900;"/>
+    <img src="./img/pakkapets-7.jpg" style="--width: 900; --height: 1042;"/>
+</div>
+<p>Bullying people in annymous gossip forms, are we? Naughty-naughty clown!</p>
+
+<div class="justified-gallery" style="margin-bottom:var(--space);"/>
+    <img src="./img/pakkapets-8.jpg" style="--width: 900; --height: 914;"/>
+    <img src="./img/pakkapets-9.jpg" style="--width: 900; --height: 647;"/>    
+</div>
+<div class="justified-gallery">
+    <img src="./img/pakkapets-10.jpg" style="--width: 900; --height: 821;"/>
+    <img src="./img/pakkapets-11.jpg" style="--width: 900; --height: 675;"/>
+</div>
+<p>Wassup man, check out these neat flowers I found! What's that? You're allergic to these? Oh no! Get out! WHat are you doing???? D:</p>
+
+<img src="./img/pakkapets-12.jpg"/>
+<p>My honest reaction to that information</p>
+
+<img src="./img/pakkapets-13.jpg"/>
+<p>Is-- is that a duplicant!>!?!??!</p>
+
+<img src="./img/pakkapets-14.jpg"/>
+<p>Yipppeee New friend :D</p>
+
+<img src="./img/pakkapets-15.jpg"/>
+<p>uuhhmm...</p>
+
+<div class="justified-gallery">
+    <img src="./img/pakkapets-16.jpg" style="--width: 900; --height: 630;"/>
+    <img src="./img/pakkapets-17.jpg" style="--width: 900; --height: 780;"/>
+</div>
+<p class="txt-center" style="margin-top:1rem;"/>Picnic Party!</p>
+<div class="justified-gallery" style="--min-height:180px">
+    <img src="./img/pakkapets-18.jpg" style="--width: 900; --height: 636;"/>
+    <img src="./img/pakkapets-19.jpg" style="--width: 900; --height: 612;"/>
+</div>
+  </div>
+
+  <div class="main-content"><div id="nextprev">
+    
+        <a href="./2024-06-15-Banana-Overlord.html" id='nextprev-next'>Next</a>
+    
+    
+        <a href="./2023-08-28-Hotdog.html" id='nextprev-prev'>Prev</a>
+    
+    <a href="./archive" id='nextprev-archive'>Archive</a>
+</div><div id="c_widget"></div>
+    <script>
+        var script = document.createElement('script');
+        script.src = "/meta/comment-widget.js";
+        document.head.appendChild(script);
+    </script>
+  </div>
+  <a class="u-url" href="./2023-08-29-Pakka-Pets.html" hidden></a>
+
+</article>
+      </main><footer>
+    <div>
+        <a href="/about/index.html">about</a>
+        <a href="/map.html">map</a>
+        <a href="./feed.xml">rss</a>
+    </div>
+</footer>
+</div>
+    <script src="./meta/main.js"></script>
+  </body>
+</html>

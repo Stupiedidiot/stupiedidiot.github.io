@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./meta/main.css"><title>Anbernic Rg35xxsp | Da Blog</title></head>
+<body>
+    <div id="container"><div id="nav">
+    <div>
+        <nav>
+            <a href="./index">🏠︎</a>
+            <a href="./../about/index.html#from-blog">about me</a>
+            <a href="./archive">archive</a>
+            <a href="#micro">micro</a>
+            <a href="#" onclick="randomPost()">random</a>
+            <a href="./../index.html">✮ head back »</a>
+            <div id="nextprev-dup"></div>
+        </nav>
+    </div>
+</div>
+
+<script>
+function randomPost(){
+    fetch("/blog/meta/posts.json")
+        .then((response) => response.json())
+        .then((posts) => {
+            randomNum = Math.floor(Math.random() * posts.length);
+            window.location.href = posts[randomNum]
+    })
+}
+</script><header class="main">
+    <div>
+		<a href="#">🢂</a>
+		Da Blog!!
+	</div>
+</header><main class="page-content" aria-label="Content">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="main-content post-header"><img src="./img/anbernic-cutout.png" style="max-width:230px;" class="float-right"><div id="blog-title">
+    <h1 itemprop="name headline">Anbernic Rg35xxsp</h1>
+</div><div id="blog-date">
+    <p class="post-meta">
+        <time class="dt-published" datetime="2025-02-28T00:00:00+08:00" itemprop="datePublished">Feb 28, 2025
+        </time></p>
+</div></header>
+
+  <div class="main-content post-content e-content" itemprop="articleBody">
+    <p>Last January I impulsive ordered an <a href="https://anbernic.com/products/rg35xxsp" target="_blank">Anbernic</a>, specifically the SP in the RG35XX family. I was initially very hesitant since I already emulate most of my games through my phone, but the charm of carrying around a clamshell was too tempting. I know that this thing is considered to be on the cheaper side of handhelds, but 2.8k pesos is a big commitment for me!! So I am glad to report that the lil guy arrived perfectly fine :3</p>
+
+<p>As advise by the community I bought a new micro sd card to replace the stock one. It's a 64gb SanDisk Ultra, which is probably overkill for retro games. I'm using <a href="https://muos.dev/" target="_blank">MuOS</a> because yeah,, The setup was really simple and I dumped all my totally legally obtained nintendo roms into folders I've decorated with pixel art of my ocs. I wish there was a way to animate the box art. I want them to bounce around when they're selected. Aside from that I had a lot of fun messing around with the settings.</p>
+
+<img src="./img/anbernic-folders.gif"/>
+
+<p>Downloaded <a href="https://en.wikipedia.org/wiki/Stardew_Valley" target="_blank">Stardew Valley</a> through <a href="https://portmaster.games/" target="_blank">Portmaster</a>, which is where I'll been spending most of my time with. I love the game but, when I'm at home using my computer, it's practically the last thing on my mind. The irony of playing a game about community and comradery alone at the corner of the classroom is not lost on me.</p>
+
+<p>Another game I've been fixating on would be <a href="https://en.wikipedia.org/wiki/Puzzle_League" target="_blank">Panel De Pon</a>. Currently using the an english patch of the SNES game from 2007. I remember wanting to try it a few years ago but never quite getting around it. After sinking a few hours in, I've become absolutely obsessed. It has a nice balance between strategy and speed. Getting continuous chains of combos is such a satisfying feeling. It reminds me a lot of <a href="https://en.wikipedia.org/wiki/AstroPop" target="_blank">AstroPop</a>. Speaking of block falling games, I have some puyo and tetris games downloaded. Yes, as in plural.</p>
+
+<p>I'm also planning to replay through all the <a href="https://en.wikipedia.org/wiki/Ace_Attorney" target="_blank">Ace Attorney</a> games on nds. I forgot how charming the characters are. If you have recommendations for interesting Pokemon rom hacks or games made with RPG Maker 2003, feel free to let me know! Been wanting to get into the two but don't really know where to start.</p>
+
+<p>Personally not in the position to provide deep insight of how good the device is; I am technologically illiterate. All I can say is I've had this lil guy for about a week or so and I love him to absolute death.</p>
+
+<img src="./img/sign-off.png" alt="" class="sign-off">
+
+<style>
+    :root{ --accent-color:#e21b06; }
+    body::before{display: none;}
+    body{
+        image-rendering: pixelated;
+        background-image: url(./img/anbernic-bg.png);
+        background-size:cover;
+    }
+
+    footer{background-color:black;color: white;}
+
+    img[src="./../meta/pfp-transparent.png' | relative_url }}"]{filter: grayscale(100);}
+    @media only screen and (max-width: 700px) {
+        .float-right{float:none;margin:auto;margin-bottom: 2rem!important;}
+    }
+</style>
+  </div>
+
+  <div class="main-content"><div id="nextprev">
+    
+        <a href="./2025-05-19-Summer.html" id='nextprev-next'>Next</a>
+    
+    
+        <a href="./2025-02-01-Hourly-Comic.html" id='nextprev-prev'>Prev</a>
+    
+    <a href="./archive" id='nextprev-archive'>Archive</a>
+</div><div id="c_widget"></div>
+    <script>
+        var script = document.createElement('script');
+        script.src = "/meta/comment-widget.js";
+        document.head.appendChild(script);
+    </script>
+  </div>
+  <a class="u-url" href="./2025-02-28-Anbernic-RG35XXSP.html" hidden></a>
+
+</article>
+      </main><footer>
+    <div>
+        <a href="/about/index.html">about</a>
+        <a href="/map.html">map</a>
+        <a href="./feed.xml">rss</a>
+    </div>
+</footer>
+</div>
+    <script src="./meta/main.js"></script>
+  </body>
+</html>
