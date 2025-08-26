@@ -1,0 +1,183 @@
+@import url(./../meta/styles/fonts.css);
+@import url(./../meta/styles/colors.css);
+
+*{
+	font-family:Verdana;
+}
+body{
+	margin:0;
+}
+h1, h2, h3, h4, h5, h6, a{
+	font-family:rival;
+	margin:0;
+}
+p{
+	margin-top:0;
+}
+a{
+	color:var(--color1-1);
+	text-decoration:none;
+}
+a:hover{
+	color:var(--color2-1);
+}
+ul, ol{
+	margin-top:0;
+	padding-left:25px;
+}
+li {
+	padding-left:0.5rem;
+}
+span{
+	font-family:inherit;
+}
+img{
+	width:100%;
+	display:block;
+}
+hr{
+	border: 1px dashed var(--color3-5);
+	margin:1rem 0;
+}
+.clear{
+	clear:both;
+}
+hr.clear{
+	border-color:rgba(255, 255, 255, 0);
+}
+.pad-1rem{
+	padding:1rem;
+}
+.pad-5px{
+	padding:5px;
+}
+
+#artworkNav a:hover{
+	color:var(--color1-1);
+}
+
+#artworkNav a, #artworkNav{
+    color:var(--color3-1);
+  }
+
+.new div > h2{
+    background-color:var(--color3-5);
+}
+
+div.container{
+	padding:1rem;
+	background-color:white;
+	border-radius:5px;
+}
+div.container:not(:first-child){
+	margin-top:5px;
+}
+
+div.content{
+	width:90%;
+	margin:10px auto 10px auto;
+}
+.flex1{
+	flex:1;
+}
+.flex2{
+	flex:2;
+}
+#navi {
+	background-color:black;
+	padding:1rem;
+}
+#navi img{
+	transition: 0.15s;
+	margin:12px auto 0 auto;
+	width:25px;
+	opacity: 0.5;
+}
+#navi a:hover > img, #sideNav a:hover{
+	opacity: 1;
+}
+#navi > div{
+	top:1rem;
+	position:sticky;
+}
+#sideNav {
+z-index:3;
+	transition: 0.5s;
+	width:0;
+	height:100%;
+	overflow-x: hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:black;
+	white-space: nowrap;
+	color:white;
+	padding-top: 3rem;
+}
+#sideNav div:first-child{
+	margin:1rem;
+}
+#sideNav a {
+  padding: 8px 8px 8px 32px;
+  display: block;
+  transition: 0.15s;
+  color:white;
+  opacity: 0.5;
+}
+#sideNav > h2:first-of-type{
+	position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+
+}
+#sideNav ul{
+	list-style-type:none;
+}
+#sideNav::-webkit-scrollbar {
+  display:none;
+}
+#artworkNav{
+	text-align:center;
+}
+
+@media only screen and (min-width: 701px) {
+	h1.big{
+		font-size:50px;
+	}
+	.flex{
+	display:flex
+	}
+	#body { grid-area: body;max-width:1300px;margin:15px;}
+	#navi { grid-area: nav;width:25px;}
+	.temp {
+  display: grid;
+  grid-template-areas:
+    'nav body';
+	grid-template-columns: auto 1fr;
+	min-height:100vh;
+}
+}
+
+@media only screen and (max-width: 700px) {
+	#body{
+		margin:10px;
+	}
+	#navi {
+	margin-bottom:0.5rem;
+	position:sticky;
+	top:0;
+	z-index:2;
+	}
+	#navi > div{
+	display:flex;
+	}
+	#navi > div > div{
+		flex:1;
+	}
+	#navi img{
+	width:20px;
+	margin:5px auto 5px auto;
+	}
+}

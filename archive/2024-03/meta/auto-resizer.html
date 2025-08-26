@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" meta name="viewport" content="width=device-width initial-scale=1.0">
+<Title>Auto-Resizer | Stupied Stuff</Title>
+</head>
+<body>
+<div id="info">
+<h1>Auto-Resizer</h1>
+<p>Hello, if you accidentally stumbbled across here, kindly ignore it lol. It's just my method of implimenting lazy loading by automatically resizing the images through discords proxy server</p>
+<p>You may use it as well if you'd like. (Assuming you can understand my shit ass code lmao)</p>
+<button id="bonk">bonk</button>
+<button id="copy">copy</button>
+</div>
+
+<div id="wtf">
+	<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852607536070676/1-1.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852607779360778/1-2.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852608064565309/1-3.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852160133857280/3-1.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852160456826940/3-2.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852160700100648/3-3.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852160960135248/3-4.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140852161232773281/3-5.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856569291091978/4-1.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856569676955689/4-2.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856569987346572/4-3.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856570259963994/4-5.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856570566160414/4-6.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856570851360768/4-7.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856702531555418/5-1.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856702930001922/5-2.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856703265550496/5-3.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856922417926185/6-1.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856922665402538/6-2.jpg">
+<img src="https://cdn.discordapp.com/attachments/1140836502566346845/1140856922942210169/6-3.jpg">
+</div>
+</body>
+<script src="./../meta/scripts/jquery.js"></script>
+<script src="./../meta/scripts/jquery-tjgallery.min.js"></script>
+<script>
+var img = [
+];
+
+setWidth=400;
+
+if (img.length==0) {
+	woof  = document.querySelectorAll("#wtf > img");
+	for (i=0;i<woof.length;i++){
+		img.push(woof[i].src)
+	}
+	document.getElementById("wtf").remove();
+}
+
+inputHTML = document.createElement('div');
+inputHTML.id = 'input';
+inputHTML.innerHTML="<h1>Input</h1>";
+var imputImages =""
+for (let i=0; i<img.length; i++){
+imputImages+='<img src="'+img[i]+'">';
+}
+inputHTML.innerHTML+=imputImages;
+document.body.appendChild(inputHTML);
+
+outputHTML = document.createElement('div');
+outputHTML.id = 'output';
+outputHTML.innerHTML="<h1>Output</h1>";
+outputHTML.innerHTML+=imputImages;
+$(outputHTML).append(outputHTML).insertAfter("#info")
+
+$(window).on("load", function(){
+var outputCODES =""
+var images = document.querySelectorAll("#output>img");
+        for (var i = 0; i < images.length; ++i){
+			source = images[i]
+			var newSource = source.src
+			newSource = newSource.replaceAll("cdn.discordapp.com","media.discordapp.net");
+			if (newSource.includes("?")){
+			newSource = newSource.slice(0,newSource.lastIndexOf("?"));
+			}
+			var width = source.width;
+			var height = source.height;
+			
+			if (width>setWidth){
+			scale = width/setWidth
+			height = Math.round(height/scale)
+			console.log(height)
+			newSource+= "?width="+setWidth+"&height="+height
+			source.src=newSource
+			console.log(newSource)
+			}
+			outputCODES += '<img src="'+newSource+'">'
+        }
+		$("#copy").on("click",function(){
+	navigator.clipboard.writeText(outputCODES)
+	alert("Copied the text");}
+)
+		})
+$("#bonk").on("click",function(){
+	$('#input').tjGallery({rowMinHeight:200});
+	$('#output').tjGallery({rowMinHeight:200});
+})
+</script>
+</html>

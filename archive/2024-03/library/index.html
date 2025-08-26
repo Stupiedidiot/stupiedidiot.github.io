@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Comcis made by Stupied!">
+	<meta name="keywords" content="Stupied, Stupied Idiot, StupiedIdiot, Stupied_Idiot, Stupied comics, Stupied idiot comics, Stupied Stuff">
+		<link rel="stylesheet" href="./../meta/styles/style.css">
+			<Title>Library | Stupied Stuff</Title>
+</head>
+
+<style>
+	#comics-catalog{
+		display:flex;
+		flex-wrap: wrap;
+	}
+	#comics-catalog > div:not(#comic-full-desc){
+		text-align:center;
+	}
+	#comics-catalog > div{
+		flex:42%;
+		padding:1%;
+		margin:1%;
+	}
+	#comics-catalog > div > div:not(#comic-full-desc div) {
+		display:none;
+	}
+	#comics-catalog > #comic-full-desc {
+		box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.20);
+		padding:1rem;
+		border-radius:8px;
+		flex:100%;
+	}
+
+.comic-desc-temp1 #img { grid-area: img;}
+.comic-desc-temp1 #desc { grid-area: desc;}
+.comic-desc-temp1 #link { grid-area: links;}
+
+.comic-desc-temp1 {
+  display: grid;
+  grid-template-areas:
+    'img desc'
+	'img links';
+	grid-template-columns: 1fr 2fr ;
+	gap:1rem;
+}
+
+.comic-desc-temp1 h1 span.txt-blue {
+	font-size:20px;
+}
+
+@media only screen and (max-width:701px){
+	.comic-desc-temp1 {
+  		grid-template-areas:
+    		'img desc'
+			'links links';
+	}
+}
+
+@media only screen and (max-width:400px){
+	.comic-desc-temp1{
+		display:block;
+	}
+}
+
+</style>
+
+<body class="check-blue">
+<div class="temp">
+<div id="head"></div>
+<div id="marq"></div>
+<div id="navi"></div>
+<div id="body" class="rad">
+	<div class="cont">
+		<h1 class="txt-center">Comics</h1>
+		<hr>
+		<div id="comics-catalog">
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-jam-with-me.png">
+				<h3>Jam with Me!</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Jam with Me! <span class="txt-blue">(2023)</span></h1>
+						<p>High effort shitposts of me and my best buddy Jam. They're really just excuse to expirement with different formats and mess around. </p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-adrift.png">
+				<h3>Adrift</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover-adrift.png">
+					</div>
+					<div id="desc">
+						<h1>Adrift <span class="txt-blue">(2023)</span></h1>
+						<p>It's clearance signing and Adrina has an essay to finish.</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="./comic/adrift/index.html">Read locally</a></li>
+							<li><a href="https://www.webtoons.com/en/canvas/adrift/list?title_no=877819">Read on Webtoons</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-literal.png">
+				<h3>Literal Comics</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Literal Comics! <span class="txt-blue">(2023)</span></h1>
+						<p>All my comics related to the TWOLH Universe. This can include headcannons, dumb memes, and oc stuff.</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+							<li><a href="https://www.webtoons.com/en/canvas/clipper/list?title_no=876140">Read on Webtoons</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-penny.png">
+				<h3>Penny's Perfect Present</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Penny's Perfect Present <span class="txt-blue">(2022)</span></h1>
+						<p>Penny wants to buy her mom a nice gift for an upcoming event!</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+							<li><a href="https://www.webtoons.com/en/canvas/pennys-perfect-present/list?title_no=780774">Read on Webtoons</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb.png">
+				<h3>Sunii and Dayy</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Sunii and Dayy <span class="txt-blue">(2020)</span></h1>
+						<p>Some cringy comic of furry lesbians.</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-how-to-not.png">
+				<h3>How to Not</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>How to Not <span class="txt-blue">(2020)</span></h1>
+						<p>A comic called "How to Not" that teaches you how to by telling you how not to. This comic is funny enough if you sniffed out enough glue.</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+							<li><a href="https://www.webtoons.com/en/canvas/how-to-not/list?title_no=499905">Read on Webtoons</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-back-to-school.png">
+				<h3>Back to School</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Back to School <span class="txt-blue">(2019)</span></h1>
+						<p>One of my first few attempts of making a dumb slice of life webcomic. They're really poorly made but I like how you can tell past me thought they we're the funniest ever lmao.</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-stupied-genius.png">
+				<h3>Stupied Genius</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Stupied Genius<span class="txt-blue">(2018)</span></h1>
+						<p>One of those "haha look at I'm so qUirKy you guyzz" comics I made. Did not get that far since I didn't really know what was actually funny.</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img src="./../meta/imgs/comics/thumb-shitposts.png">
+				<h3>Shitposts</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Shit Posts <span class="txt-blue">(FOREVER BABY!!)</span></h1>
+						<p>All my low effort comics collected right here for your convenience!</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div>
+				<img src="./../meta/imgs/comics/thumb.png">
+				<h3>Uncategorized</h3>
+				<div class="comic-desc-temp1">
+					<div id="img">
+						<img src="./../meta/imgs/comics/cover.png">
+					</div>
+					<div id="desc">
+						<h1>Uncategorized</h1>
+						<p>Miscellaneous comcis from periods I can't remember or be bothered to put in it's own catagory</p>
+					</div>
+					<div id="links">
+						<h3>Links:</h3>
+						<ul>
+							<li><a href="#">Read locally</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+<div id="extra">
+<div class="cont">
+<h2 class="txt-blue">Hey there!</h2>
+<p>You may do whatever with my comics, hell even take credit for them! I don't really care. Also remember to keep your expectations low, like puppychan level low.</p>
+</div>
+</div>
+<div id="footer"></div>
+</div>
+</body>
+<script src="./../meta/scripts/script.js"></script>
+<script src="./../meta/scripts/jquery.js"></script>
+<script>
+maxComics = document.querySelectorAll("#comics-catalog > div").length
+
+	for (i=1;i<maxComics+1;i++){
+		ITEM= document.querySelector("#comics-catalog > div:nth-of-type("+i+")")
+		ITEM.setAttribute("id", i)
+		if (screen.width > 500){
+		  $(ITEM).on( "click", comicsCLICK)
+		} else {
+		   $(ITEM).on( "dblclick", comicsCLICK)
+		} 
+		
+		function comicsCLICK(){
+				item=this
+				itemX= $(item).index()+1
+					comicsOPEN(item, itemX)
+			}
+	}
+
+$(window).on("resize",comicsCLOSE);
+
+	function comicsOPEN(x){
+			comicsCLOSE();
+
+		itemX= $(x).index()+1
+		comicDesc = document.querySelector("#comics-catalog > div:nth-of-type("+itemX+") > div").cloneNode(true)
+		comicDesc.setAttribute("id","comic-full-desc")
+
+		if (window.innerWidth > 150){
+			if(itemX < maxComics-1){
+				if (itemX % 2 == 0){
+				document.getElementById("comics-catalog").insertBefore(comicDesc,x.nextElementSibling);
+				} else {
+				document.getElementById("comics-catalog").insertBefore(comicDesc,x.nextElementSibling.nextElementSibling);
+				}
+			} else {
+				if (itemX % 2 == 0){
+					document.getElementById("comics-catalog").insertBefore(comicDesc,x.previousElementSibling);
+				} else {
+					document.getElementById("comics-catalog").insertBefore(comicDesc,x);
+				}
+			}
+		} else {
+				document.getElementById("comics-catalog").insertBefore(comicDesc,x.nextElementSibling);
+		}
+	}
+	function comicsCLOSE(){
+		if (document.getElementById("comic-full-desc")!==null){
+			document.getElementById("comic-full-desc").remove()
+		}
+	}
+	</script>
+</html>

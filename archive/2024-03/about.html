@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="It is a collection of random pieces of media I enjoy. It can range from decade old video games, shitty music and films, or fun youtube videos.">
+	<meta name="keywords" content="Stupied, Stupied Idiot, StupiedIdiot, Stupied_Idiot, Stupied Stuff">
+	<link rel="stylesheet" href="./meta/styles/style.css">
+			<Title>Meet the Artist!</Title>
+
+<style>
+button{
+	padding:0.5rem;
+	margin:0.2rem 0;
+}
+::marker{
+	font-weight:bold;
+}
+#socials{
+	display:flex;
+	flex-wrap:wrap;
+}
+#socials div{
+	min-width:300px;
+	border:4px solid var(--color3-5);
+	overflow:hidden;
+	margin:0.3rem;
+}
+#socials img{
+	width:100%;
+	transition: all 0.5s ease;
+	margin:auto;
+}
+#socials div{
+	flex:1;
+}
+#socials img:hover{
+    transform: scale(1.2);
+}
+#bio {
+	padding:0.5rem;
+	background-color:var(--color1-1);
+}
+#fact{
+	clear:both;
+	margin-top:2.5rem;
+}
+#fact img {
+	margin-top:10px;
+}
+#factContainer{
+	background-color:var(--color3-1);
+	overflow:auto;
+	height:10rem;
+}
+#factContainer p{
+	text-align:center;
+}
+#likes {
+	background-color:var(--color2-1);
+	margin-top:1rem;
+	clear:both;
+}
+.bored{
+	border:4px solid var(--color3-5);
+}
+</style>
+</head>
+<body>
+<div class="flex" style="max-width:1500px;margin:auto;">
+	<div class="pad-1rem flex1">
+			<img style="width:100%;max-width:180px;float:right;" src="./meta/imgs/yep.png">
+		<br>
+		<div id="bio" class="bored">
+			<h1>Henlo I'm Stupied!</h1>
+		
+			<p>I'm a wannabe artist who thinks they're cooler than what they actually are. I draw, write, program and video edit. As you can guess, I'm a master of none of those.</p>
+			
+			<p>I'm extremely impulsive, so please don't expect any consistency from me.</p>
+		</div>
+		
+		<div id="fact">
+			<h3>Random Fact Generator!</h3>
+				<div id="factContainer" class="pad-1rem bored"><p class="txt-gray">Click the button for random facts of whatever my 2 brain cells can think off.</p></div>
+				<div style="text-align:right;"><button id="factButton" onclick="generateFact()">Generate!</button></div>
+		</div>
+		
+		<div id="likes" class="pad-1rem bored">
+			<h3>Stuff I love:</h3>
+			<ul>
+				<li>Turbo - Woah that snail is fast!!</li>
+				<li>Spore creature creator</li>
+				<li>Scott Pilgrim vs the World!!!</li>
+				<li>Comics in general really</li>
+				<li>Hermitcraft and Life Series SMP</li>
+				<li>Puzzle games - e.g. Baba is You, Portal, and Tetris</li>
+				<li>Anonymous gossip forums</li>
+				<li>Pop rock and antifolk music</li>
+				<li>Scrabble</li>
+			<ul>
+		</div>
+	</div>
+	
+	<div class="pad-1rem flex2">
+		<h1 style="font-size: 4rem;">About me</h1>
+		<hr style="border: 3px solid var(--color3-5)">
+		<h1>>What's in the name?</h1>
+		<p>Pronounced as it's sounds (ˈstü-'pīd), my pen name dates back to my elementary years. I consider myself quite literate but I lack skills in spelling. I found it funny that no one ever bothered correcting the way I spelled stupid up until grade 6. So I decided to proudly wear this mistake lol.</p>
+
+
+		<h1>>Where can I learn about your ocs?</h1>
+		<p>Ha! Very bold of you to assume you can. I have an unhealthy amount of ocs. I've developed a fear of sharing about them, for reason that are too lengthy to explain here. I will make comics about them soon, I promise. xD
+
+
+		<h1>>What are your inspirations?</h1>
+		<p>When it comes to my art specifically: <a href="https://literalhat.com/" target="_blank">Literal hat</a>, <a href="https://kittydog.carrd.co/" target="_blank">Kittydoggo</a>, <a href="https://m.youtube.com/channel/UCD4XIm3ZFhT72WjqhIXMN9w&ved=2ahUKEwjD1YXjlrT_AhWW8DgGHZZACOwQFnoECAkQAQ&usg=AOvVaw3t_heI4_JaJqKk6-5WVG6W" target="_blank">LavenderTowne</a>, and <a href="https://www.instagram.com/carles_dalmau/" target="_blank">Carles Dalmau</a> comes to mind. I am inspired by a lot of things and it's difficult to pin point them all! I could go on and on but I think it's best to save those ramblings for another time. </p>
+
+		<h1>>Do you do commissions?</h1>
+		<p>I've done quite a hefty amount of them, but the paranoia never seems to go away. I tend to stress about whether or not my art is worth the price I give it. Feel free to personally ask me, but know that there is no guarantee. <a href="./gallery/commissions.html">Click here for commission information</a></p>
+		
+		<div id="socials">
+			<div><a href="https://www.instagram.com/stupied.idiot/" target="_blank"><img  src="./meta/imgs/instagram.png"></a></div>
+			<div><a href="https://www.webtoons.com/en//creator/s8fej" target="_blank"><img  src="./meta/imgs/webtoons.png"></a></div>
+			<div><a href="https://www.youtube.com/channel/UCkMvv6NaerYdYbqTZ08RBFg" target="_blank"><img  src="./meta/imgs/youtube.png"></a></div>
+			<div><a href="https://scratch.mit.edu/users/Stupied_Idiot/" target="_blank"><img  src="./meta/imgs/scratch.png"></a></div>
+			<div><a href="https://www.twitter.com/stupiedidiot" target="_blank"><img  src="./meta/imgs/twitter.png"></a></div>
+			<div><a href="https://artfight.net/~Stupied_idiot" target="_blank"><img  src="./meta/imgs/artfight.png"></a></div>
+		</div>
+	
+		<div class="pad-1rem" style="text-align:center;">
+		<a href="index.html">Home »<a>
+		</div>
+	</div>
+	
+</div>
+</body>
+<script>
+facts = [
+"Snails have toothed tongue called radula. They use it to scrap and cut food.",
+"They might be giants is awful. If you think their music sounds great, please get some better tunes.",
+"In the 2nd Cornetto film, ‘Hot Fuzz’, Nicholas was meant to have a love interest. This was soon scrapped and most of her lines was given to his best friend, Danny.", 
+"Snails breathe through their skin pores!",
+"If any of my siblings are reading this, know that you suck.",
+"Snails are cool.",
+"Turbo’s real name is Theo.",
+"Whiplash’s real name is Whitney. He ran away from the winery family business, Chubby Snails, where he would have become the business’s mascot.",
+"This fact was written by the webmaster’s sister.",
+"Lasagnas are sandwiches.",
+"Portal’s advance chamber 16 sucks and I hate it with a burning passion. Especially because my younger brother was able to solve it in the stupidest way possible, building a box fort.",
+"Portal 2 has some funny hidden dialogue whenever you get you softlock yourself. This one’s my <a href=\"https://www.youtube.com/watch?v=-_wriFk5Ylc\" target=\"_blank\"> favorite.</a>",
+"Scott Pilgrim had a  <a href=\"https://scottpilgrim.fandom.com/wiki/Pilgrim_family_dog\" target=\"_blank\">dog</a>. He literally only appears in one panel.<img src=\"https://cdn.discordapp.com/attachments/1121291166067994695/1192273953893392545/1000.png\">",
+"The boiling point of water is 100 °C",
+"Sig is one of the few characters who is not generally symmetrical. As a side-effect, he is given 2 different sets of art, one for facing left and one for facing right.",
+"Sig can sleep with his eyes open.",
+"Accuracy refers to how close a set is to a given true value, while precision refers to how consistent they are on getting a relative value. <img src=\"https://cdn.discordapp.com/attachments/1121291166067994695/1192273209282810026/Accuracy-vs-precision1.png\">",
+"Raffina has weaker magical powers than her peers. To keep up the pouch she uses is a 'magic amplifier' that gathers tiny traces of magic from the surroundings and amplifies their power by using her melee attacks as a catalyst and a medium to amplify its power.",
+"The English version of Puyo Pop Fever refers to Lidelle as 'Rider', 'Rita', and 'Ridel' on separate occasions, the last of which more closely resembles a direct romanization of リデル.",
+"Raffina and Lidelle are in love, it's true they told me!"
+];
+
+const factsTotal = facts.length;
+
+function generateFact(){
+	if (facts.length>0) {
+		var rng= [Math.floor(Math.random()*facts.length)];
+		document.getElementById('factContainer').innerHTML="<p>" + facts[rng] + "</p>";
+		facts.splice(rng, 1);
+	} else {
+		document.getElementById('factContainer').innerHTML="<p><img class='img-100px' style='margin:auto;' src=\"https://cdn.discordapp.com/attachments/1121291166067994695/1192277952667332649/Cheese-Bread-1.png\"><span style='font-family:rival;font-weight:bold;color:var(--color2-1);'>Congratulations!</span> You've read through all <span style='font-weight:bold;'>" + factsTotal + "</span> facts! Have some snail bread!!!</p>";
+	}
+}
+</script>
+</html>

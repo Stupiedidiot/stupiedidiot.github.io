@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Comcis made by Stupied!">
+	<meta name="keywords" content="Stupied, Stupied Idiot, StupiedIdiot, Stupied_Idiot, Stupied comics, Stupied idiot comics, Stupied Stuff">
+		<link rel="stylesheet" href="./../../../meta/styles/style.css">
+			<Title>Adrift | Stupied Stuff</Title>
+</head>
+<body style='background-image:url("https://cdn.discordapp.com/attachments/1135515969205309440/1192429873113862204/raindrops_2.gif");background-repeat: repeat-x;background-color:black; background-attachment: fixed;'>
+<div class="temp">
+<div id="head"><img src="https://cdn.discordapp.com/attachments/1152393418174111765/1197075969060646972/adrift-banner.png"></div>
+<div id="marq"></div>
+<div id="navi"></div>
+<div id="body" class="rad">
+	<div class="cont">
+		<div class="pictures">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393913240399892/adrift-1.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393913680805948/adrift-2.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393914247032873/adrift-3.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393914616135790/adrift-4.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393915211718756/adrift-5.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393915744403466/adrift-6.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393916155437156/adrift-7.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393916595843162/adrift-8.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393917090766989/adrift-9.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393921498992671/adrift-10.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393921935196260/adrift-11.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393922434310154/adrift-12.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393922895695935/adrift-13.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393923289956372/adrift-14.png">
+		<img src="https://cdn.discordapp.com/attachments/1152393418174111765/1152393912674173039/adrift-0.png">
+		</div>
+	</div>
+	<div class="cont">
+		<!-- begin wwww.htmlcommentbox.com -->
+		 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
+		 <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" /><style>#HCB_comment_box img{width:auto;display:inline-block;}</style>
+		 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24lorU9Glfj8bQyg9yk9caG%2F"+"&opts=16798&num=10&ts=1699153972795");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); </script>
+		<!-- end www.htmlcommentbox.com -->
+	</div>
+</div>
+<div id="extra"></div>
+<div id="footer"></div>
+</div>
+</body>
+<script src="./../../../meta/scripts/script.js"></script>
+
+<script>
+	comicZoomIn(".pictures")
+	function comicZoomIn(selector){
+		pages = document.querySelectorAll(selector+" img")
+		for (i=1;i<pages.length+1;i++){
+			source = document.createElement('a')
+			source.href = pages[i-1].src; ;
+			selectorHTML= document.querySelector(selector+"> img:nth-of-type(1)")
+			wrap(selectorHTML, source)
+        }
+	}
+
+	function wrap(x, wrapper) {
+    	x.parentNode.insertBefore(wrapper, x);
+    	wrapper.appendChild(x);
+	}
+</script>
+</html>

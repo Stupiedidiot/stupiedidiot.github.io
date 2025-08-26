@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="It is a collection of random pieces of media I enjoy. It can range from decade old video games, shitty music and films, or fun youtube videos.">
+<meta name="keywords" content="Stupied, Stupied Idiot, StupiedIdiot, Stupied_Idiot, Stupied Stuff">
+<link rel="stylesheet" href="./meta/styles/style.css">
+<Title>Hello There!!!! (^_^)/</Title>
+</head>
+<body class="check-blue">
+<div class="temp">
+<div id="head"></div>
+<div id="marq"><marquee>Welcome to Stupied's stupid Website :3</marquee></div>
+<div id="navi"></div>
+<div id="body" class="rad">
+<noscript><h1>Attention!</h1><p>If you are seeing this, this means your javascript is disabled. Kindly turn it back on, the entire website is ran with it and will be rendered impossible to go through without it</p><p>I promise you I'm too much of a moron to know how to code anything effectively malicious :'D</p></noscript>
+<div class="cont">
+<h1 class="txt-blue">What's Updog??</h1>
+<h2>I am so sorry</h2>
+<p>Hello you might notice my website being weird and not loading photos. It's cuz Discord doesn't really allow hotlinking images anymore so I pretty much have to move most of my images to another site. So a lot of stuff will be unaccessable until I find the motivation to fix it,, sorry :( </p>
+
+<!--<a href="./topics/mopsy/modes/1-3.html"><img src="https://i.imgur.com/Bh40txT.png" class="img-200px img-right"></a><h2>Mopsy Dress UP Game!!</h2>
+<p>Happy New Year! I have been procastinanting on doing anything lol. Anyways I cut up some spreads from Mopsy Modes, will do more when I feel motivated to.</p>
+<p><a href="./topics/mopsy/index.html">Click me to go to updated page awoo</a></p>
+<hr class="clear">!-->
+</div>
+<div class="cont">
+<div class="new">
+	<div id="articles"><h2>Current Articles</h2></div>
+	<div id="weblog"><h2>Recent Posts</h2></div>
+</div>
+<hr>
+<h3>Where to go?</h3>
+<ul>
+<li><a href="topics/index.html">Topics</a> - Dedicated shrines for specific things</li>
+<li><a href="articles/index.html">Articles</a> - Cohesive Write-ups of whatever interest me</li>
+<li><a href="blog/index.html">Weblog</a> - Personal Screaming Chamber</li>
+<li><a href="gallery/index.html">Gallery</a> - Artwork by yours truely</li>
+</ul>
+<p class="txt-gray txt-right">Still don't know where to start? <a href="dumpster/randomizer.html">Click me!</a></p>
+</div>
+<div class="cont">
+<img src="./meta/imgs/what.png" style="width:200px;margin:auto">
+<h1 class="txt-center">What is Stupied Stuff?</h1>
+<p>It is a collection of random pieces of media I enjoy. It can range from decade old video games, shitty music and films, or fun youtube videos. <span class="txt-gray">It is also a general repository and index of all the stuff I make.</span></p>
+<p>This website is developed by a singular dog! There may be some bugs and empty pages.</p>
+<br>
+<hr>
+<h3 class="txt-pink">Trigger Warning!</h3>
+<p>There might be bad-words, artworks that features gore and violence, and mildly suggestive content. Consider this your first and only warning.</p>
+</div>
+</div>
+<div id="extra"></div>
+<div id="footer"></div>
+</div>
+</body>
+<script src="./meta/scripts/script.js"></script><script src="./meta/scripts/topics.js"></script>
+<script>
+for (i = 0, result="<ul>"; i < articles.length; i++){
+	title = getTitle(i, articles);
+	result +='<li><a href="articles/'+ articles[i][0] +'"><h4>' + title + '</h4></a></li>';
+}
+result+='<li><a href="articles/index.html">View More<span class="hide-a"> »</span></a></li></ul>';
+Addto('articles',result)
+for (i = 0, result="<ul>"; i < 4; i++){
+	title = getTitle(i, posts);
+	result +='<li><a href="blog/'+ posts[i][0] +'"><h4>' + title + '</h4></a></li>';
+}
+result+='<li><a href="blog/index.html">View More<span class="hide-a"> »</span></a></li></ul>';
+Addto('weblog',result)
+for (i = 0, result="<ul>"; i < 4; i++){
+	fold = catPages[i][1];
+	fold = foldConv(fold, i);
+	title = catPages[i][0];
+	desc = catPages[i][2];
+	result +='<li><a href="topics/' + fold + home + '"><h4>' + title + '</h4></a></li>';
+}
+result+='<li><a href="topics/index.html">View More<span class="hide-a"> »</span></a></li></ul>';
+Addto('topics',result)
+</script>
+</html>

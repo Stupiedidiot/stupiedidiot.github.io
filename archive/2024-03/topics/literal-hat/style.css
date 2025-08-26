@@ -1,0 +1,142 @@
+@import url("./../../meta/styles/fonts.css");
+
+:root {
+  --color1: white;
+  --color2: #aeaeae;
+  --color3: #525659;
+  --color4: #323639;
+  --color5: black;
+  --color6: red;
+}
+
+body{
+	margin:0;
+	background-color:var(--color3);
+}
+h1, h2, h3, h4{
+	margin:0;
+	font-family: vet;
+} 
+a {
+	margin:0;
+	font-family:times-new-roman;
+}
+p{
+	margin-top:0;
+	font-family:times-new-roman;
+}
+div p:last-child{
+	margin:0;
+}
+a{
+	color:var(--color5);
+	text-decoration:none;
+}
+a:hover, #nextprev a:hover, #sideNav a:hover {
+	color:var(--color6);
+	text-decoration:underline;
+}
+.txt-underline a{
+	text-decoration:underline;
+}
+
+ul {
+	margin-top:0;
+	padding-left:25px;
+	list-style-type:"▸";
+}
+li {
+	padding-left:0.5rem;
+}
+span{
+	font-family:inherit;
+}
+img{
+	width:100%;
+}
+.txt-center, .item h3{
+	text-align:center;
+}
+#nav {
+	z-index:2;
+	box-shadow: 0 0 5px 0 black;
+	background-color:var(--color4);
+	padding:1.3rem 3rem;
+	position: sticky;
+	display:flex;
+	top: 0;
+}
+
+#nextprev a, #nav a, #sideNav a{
+	overflow:hidden;
+	font-weight: 650;
+	font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+	color:var(--color2);
+}
+
+#load{
+	padding:0.5rem;
+	text-align:center;
+	width:100%;
+}
+
+#sideNav{
+	z-index:3;
+	transition: 0.5s;
+	width:0;
+	height:100%;
+	overflow-x: hidden;
+	position:fixed;
+	top:0;
+	left:0;
+	background-color:var(--color5);
+	padding-top:2rem;
+}
+
+#sideNav a:not(:first-child){
+	display:list-item;
+	list-style-type:"▸ ";
+	margin:1.5rem 2rem;
+}
+
+#sideNav a:first-child{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	text-decoration:none;
+}
+
+#nextprev{
+	text-align:center;
+	padding:2rem;
+}
+
+.page, .page2 {
+	box-shadow: 0 0 20px 0;
+	padding:2rem 1rem;
+	margin:1rem auto;
+	background-color:var(--color1);
+	overflow:hidden;
+	max-width:600px;
+	width:85%;
+}
+
+.page2 {
+	max-width:1000px;
+}
+
+.flex1{
+	flex:1;
+}
+@media only screen and (max-width: 700px) {
+	.flex{
+		display:flex;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#nav {
+		padding:1.3rem 1rem;
+	}
+}

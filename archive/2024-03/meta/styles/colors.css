@@ -1,0 +1,106 @@
+:root {
+  --color1-1: #5cbebb; /** BLUE **/
+  --color1-2: #4AB7B3;
+  --color1-3: #3B9390;
+  --color2-1: #da4170; /** PINK **/
+  --color2-2: #de547e;
+  --color2-3: #eda0b8;
+  --color2-4: #ae345a;
+  --color3-1: #ffffff; /** WHITE**/
+  --color3-2: #cccccc;
+  --color3-3: #b3b3b3;
+  --color3-4: #191919;
+  --color3-5: #000000; /** BLACK **/
+  --symbol1: "★";
+  --symbol2: "«";
+  --symbol3: "»";
+  --symbol4: "⤷";
+  }
+
+.txt-blue{
+  color:var(--color1-1);
+}
+.txt-blue3{
+  color:var(--color1-3);
+}
+.txt-gray{
+  color:var(--color3-3);
+}
+.txt-pink{
+  color:var(--color2-1);
+}
+.txt-white{
+  color:var(--color3-1);
+}
+.txt-black{
+  color:var(--color3-5);
+}
+.txt-center{
+  text-align:center;
+}
+.txt-right{
+  text-align:right;
+}
+.txt-underline{
+  text-decoration:underline;
+}
+.bg-blue{
+  background-color:var(--color1-1);
+}
+.bg-blue3{
+  background-color:var(--color1-3);
+}
+.bg-white{
+  background-color:var(--color3-1);
+}
+.bg-gray{
+  background-color:var(--color3-3);
+}
+.bg-black{
+  background-color:var(--color3-5);
+}
+
+.check-blue {
+  background: conic-gradient(
+    var(--color1-2) 90deg,
+    var(--color1-1) 90deg 180deg,
+    var(--color1-2) 180deg 270deg,
+    var(--color1-1) 270deg
+  );
+  background-repeat: repeat ;
+  background-size: 60px 60px;
+  background-position: top left;
+}
+.check-pink {
+  background: conic-gradient(
+    var(--color2-1) 90deg,
+    var(--color2-2) 90deg 180deg,
+    var(--color2-1) 180deg 270deg,
+    var(--color2-2) 270deg
+  );
+  background-repeat: repeat ;
+  background-size: 60px 60px;
+  background-position: top left;
+}
+.check-white {
+  background: conic-gradient(
+    var(--color3-2) 90deg,
+    var(--color3-3) 90deg 180deg,
+    var(--color3-2) 180deg 270deg,
+    var(--color3-3) 270deg
+  );
+  background-repeat: repeat ;
+  background-size: 60px 60px;
+  background-position: top left;
+}
+.check-black {
+  background: conic-gradient(
+    var(--color3-4) 90deg,
+    var(--color3-5) 90deg 180deg,
+    var(--color3-4) 180deg 270deg,
+    var(--color3-5) 270deg
+  );
+  background-repeat: repeat ;
+  background-size: 60px 60px;
+  background-position: top left;
+}

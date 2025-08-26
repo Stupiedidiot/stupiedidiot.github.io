@@ -1,0 +1,249 @@
+@import url("./../../meta/styles/fonts.css");
+
+:root {
+    --color1-1: #b10e0e; /** Red **/
+    --color1-2: #831010; /** Red **/
+    --color2-1: #dbb102; 
+    --color2-2: #ca9503; 
+    --color3-1: #ffffff; /** White **/
+    --color3-2: #aeaeae;
+    --color3-3: #000000; /** Black **/
+  }
+
+body{
+    margin:0;
+    background-image:url("https://cdn.discordapp.com/attachments/1135515969205309440/1135516323695304765/rrbg.gif");
+    font-family:times-new-roman;
+}
+
+p {
+    font-size:18px;
+}
+p, ul, ol{
+    margin:0 0 21px 0;
+}
+
+h1, h2, h3{
+    margin-bottom:0;
+    font-family: "wild-words";
+}
+
+a {
+    text-decoration: none;
+    color:inherit;
+}
+
+li {
+    list-style-type: square;
+}
+
+div:not(.nope) a {
+    font-weight:bold;
+}
+
+hr {
+    border-style:solid
+}
+
+hr.clear{
+	border-color:rgba(255, 255, 255, 0);
+}
+
+.clear{
+    clear:both;
+}
+
+.note {
+    position: relative;
+    padding: 1em 1.5em;
+    color: #fff;
+    background: var(--color2-1);
+    overflow: hidden;
+}
+
+.note:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 16px 16px 0;
+    border-style: solid;
+    border-color: black black var(--color2-2) var(--color2-2);
+    background: var(--color2-2);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    /* Firefox 3.0 damage limitation */
+    display: block; width: 0;
+    border-width: 8px;
+    border-color: black black transparent transparent;
+    -moz-border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 5px;
+}
+.note.red{
+    background: var(--color1-1);
+}
+
+.note.red:before{
+    border-color: black black var(--color1-2) var(--color1-2);
+}
+
+.paper {
+    box-shadow:1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+    background-image: linear-gradient(180deg, #dcdcdc 42.86%, #cccccc 42.86%, #cccccc 50%, #dcdcdc 50%, #dcdcdc 92.86%, #cccccc 92.86%, #cccccc 100%);
+    background-size: 42.00px 42.00px;
+    padding:21px 8px;
+}
+
+.stack {
+    background: #fff;
+    padding: 30px;
+    position: relative;
+  }
+  
+  .stack,
+  .stack::before,
+  .stack::after {
+    /* Styles to distinguish sheets from one another */
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.25);
+    border: 1px solid #bbb;
+  }
+  
+  .stack::before,
+  .stack::after {
+    content: "";
+    position: absolute;
+    height: 95%;
+    width: 99%;
+    background-color: #eee;
+  }
+  
+  .stack::before {
+    right: 15px;
+    top: 0;
+    transform: rotate(-1deg);
+    z-index: -1;
+  }
+  
+  .stack::after {
+    top: 5px;
+    right: -5px;
+    transform: rotate(1deg);
+    z-index: -2;
+  }  
+
+.home-img{
+    width:300px;
+    float:right;
+    margin:1rem
+}
+
+#nav, div.bg-white {
+    background-color:white;
+    padding:20px;
+}
+
+#nav {
+    margin-bottom:1rem;
+    padding:0.5rem;
+}
+
+#settings { grid-area: sett; color:black; }
+#screen { grid-area: screen; }
+#options { grid-area: options; }
+#layers { grid-area: layers; }
+
+#screen {
+    padding:1rem;
+    margin:auto;
+}
+
+#options>div:nth-child(even){
+    background-color: white;
+    padding:0.5rem; 
+}
+
+#options > div:nth-child(odd):not(:first-child){
+    margin-top:1rem;
+}
+
+#settings h1 {
+    display:inline;
+    color:var(--color2-1);
+}
+
+#options img {
+    width:calc(94%/2);
+    padding:1%;
+}
+
+#options > div > div, #settings h3{
+    display:inline
+}
+
+div.active img{
+    filter: brightness(50%); 
+}
+
+#game {
+    width:90%;
+    max-width:800px;
+    margin:2rem auto;
+}
+
+#main { grid-area: main;}
+#side { grid-area: side;}
+
+#nextprev{
+    color:white;
+    text-align: center;
+    margin-bottom:1rem;
+}
+
+@media only screen and (min-width: 601px) {
+    #game {
+        display: grid;
+        grid-template-areas:
+            'sett sett'
+            'screen options'
+            'layers options'
+            /**'color options'**/;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto auto 1fr;
+        gap:10px
+    }
+    #temp {
+        display:grid;
+          margin:2rem auto;
+          max-width:900px;
+          grid-template-areas:
+                  'main side';
+          grid-template-columns: 3fr 1fr;
+          gap:20px;
+      }      
+}
+    
+@media only screen and (max-width: 600px) {
+    #game > div {
+        margin-top:1rem;
+    }
+    #temp {
+        margin:2rem auto;
+        width:85%;
+    }
+    .home-img{
+        margin:1rem auto;
+        float:none;
+        display:block;
+    }
+    .home-header{
+        text-align: center;
+    }
+    #main {
+        margin-bottom:1rem;
+    }
+    .home-img{
+        width:100%;
+    }
+}

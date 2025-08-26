@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'rival';
+    src: url('./fonts/SF_Arch_Rival-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rival';
+    src: url('./fonts/SF_Arch_Rival_Bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'rival';
+    src: url('./fonts/SF_Arch_Rival_Italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'rival';
+    src: url('./fonts/SF_Arch_Rival_Bold_Italic-webfont.woff') format('woff');
+    font-weight:bold;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'cooper';
+    src: url("./fonts/CooperBits.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'hearts';
+    src: url("./fonts/rainyhearts.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'vet';
+    src: url("./fonts/veteran_typewriter-webfont.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'times-new-roman';
+    src: url("./fonts/Times New Roman.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dream';
+    src: url("./fonts/Daydream.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'wild-words';
+    src: url("./fonts/CC Wild Words Roman.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
