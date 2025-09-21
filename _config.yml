@@ -6,6 +6,16 @@ plugins:
   - jekyll-minifier
   - jekyll-datapage-generator
 
+# Build settings
+source: public
+destination: docs
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "none"
+
 jekyll-minifier:
   compress_css: false
   compress_javascript: false
