@@ -8,7 +8,6 @@ plugins:
 
 # Build settings
 source: public
-destination: docs
 
 defaults:
   - scope:
