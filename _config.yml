@@ -1,0 +1,12 @@
+url: "https://stupiedidiot.github.io"
+title: "stupied's closet"
+description: "Archived websites and Portfolio demos"
+
+plugins:
+  - jekyll-minifier
+  - jekyll-datapage-generator
+
+jekyll-minifier:
+  compress_css: false
+  compress_javascript: false
+  exclude: feed.xml
