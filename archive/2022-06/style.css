@@ -1,0 +1,287 @@
+@font-face{
+src:url(fonts/FredokaOne-Regular.ttf);
+font-family:chow;
+}
+
+*{
+	margin:auto;
+	padding:0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color:black;
+}
+
+nav {
+	margin-top:50px;
+	margin-bottom:10px;
+	width:70%;
+	height:60px;
+	background-color:#1E1F23;
+	border-radius:20px;
+}
+
+nav p {
+	font-family:chow;
+	color:#FFE426;
+	font-size: 24px;
+	line-height:55px;
+	float:left;
+	padding: 0px 20px;
+	margin-left: 20px;
+}
+
+nav ul{
+	float:left;
+	
+}
+
+nav ul li {
+	float:left;
+	list-style:none;
+	position:relative;
+}
+
+nav ul li a {
+	font-family:arial;
+	color:EEE1C8;
+	font-size: 18px;
+	padding: 17px 23px;
+	display:block;
+}
+
+nav ul li a:hover {
+	color:white;
+	font-size: 19px;
+}
+
+nav ul li ul {
+	display:none;
+	position:absolute;
+	background-color:EEE1C8;
+	padding: 5px;
+	border-radius: 10px;
+	z-index: 2;
+}
+
+nav ul li:hover ul {
+	display:block;
+}
+
+nav ul li ul li {
+	width: 180px;
+	border-radius: 10px;
+}
+
+nav ul li ul li a{
+	padding: 8px 23px;
+	color:black;
+}
+
+nav ul li ul li a:hover{
+	font-size: 18px;
+	background-color:FFB026;
+	color:black;
+}
+
+section{
+	margin-top:14px;
+	margin-bottom:14px;
+	width:70%;
+	background-color:#1E1F23;
+	border-radius:20px;
+}
+
+p{
+	color:white;
+	font-size: 14px;
+	padding:10px 20px 10px 20px;
+	font-size:18px;
+	font-family:arial;
+}
+
+ul.minibox li{
+	background-color:3A3C43;
+	color:EEE1C8;
+	width:43%;
+	padding:10px 20px 10px 20px;
+	font-size:18px;
+	font-family:arial;
+	margin:5px;
+	border-radius:20px;
+	display:inline-block;
+}
+
+ul.minibox2 li{
+	background-color:3A3C43;
+	color:EEE1C8;
+	padding:10px 20px 10px 20px;
+	font-size:18px;
+	font-family:arial;
+	margin:5px;
+	border-radius:20px;
+	display:inline-block;
+}
+
+ul.minibox li b {
+	color:white;
+}
+
+ul.minibox2 li b {
+	color:white;
+}
+
+ul.weee li {
+	list-style:none;
+	color:white;
+	font-size: 14px;
+	padding:10px 20px 10px 20px;
+	font-size:18px;
+	font-family:arial;
+}
+
+h1 {
+	font-family:chow;
+	color:#FFE426;
+	letter-spacing:2px;
+	padding:10px 20px 10px 20px;
+}
+
+
+h2 {
+	font-family:chow;
+	color:#FFE426;
+	padding:10px 20px 10px 20px;
+}
+
+a{
+	text-decoration:none;
+	color:#FFE426;
+}
+
+a:hover {
+	text-decoration:none;
+	color:FFB026;
+}
+
+header img{
+	display: block;
+	margin-left:0;
+	margin-right:0;
+	width:100%;
+	filter: brightness(50%);
+	z-index: 0;
+}
+
+.headertext {
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	z-index: 1;
+	font-size: 100px;
+	color:white;
+	letter-spacing:4px;
+}
+
+.aboutrow2 img{
+	transition: transform .2s;
+	width:300px;
+	padding:15px;
+}
+.aboutrow2 img:hover{
+	 transform: scale(1.03);
+}
+
+.aboutrow2 div {
+	flex: 50%;
+}
+
+.aboutrow2 {
+    display:flex;
+}
+
+.aboutrow img{
+	padding:15px;
+	width:180px;
+}
+
+.aboutrow div {
+	flex: 50%;
+}
+
+.aboutrow {
+    display:flex;
+}
+
+audio{
+	padding:10px;
+}
+
+section.songs div {
+	margin-top:5px;
+	margin-bottom:5px;
+	position: relative;
+	display:inline-block;
+	border-radius:20px;
+	width:320px;
+	background-color:3A3C43;
+}
+
+.songs {
+	text-align:center;
+}
+
+section.songs div img{
+	width:200px;
+	padding:15px;
+}
+
+
+.gallery {
+	text-align:center;
+}
+
+section.gallery img{
+	height:350px;
+	padding:5px;
+	position: relative;
+	display:inline-block;
+	transition: transform .2s;
+}
+
+
+section.gallery img:hover{
+ filter: brightness(70%);
+ transform: scale(1.02);
+}
+
+.sticky {
+	text-align:center;
+	margin-left:30px;
+	width:200px;
+	z-index: 1;
+  position: fixed;
+}
+
+section.gallery hr {
+  border: 5px solid black;
+}
+
+div.videoplayer{
+	position: relative;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 56.25%;
+}
+
+div.videoplayer iframe{
+	position: absolute;
+	top: 5px;
+	left: 0;
+	bottom: 5px;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
